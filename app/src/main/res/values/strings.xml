@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">garapmaneh</string>
+    <string name="title_home">Home</string>
+    <string name="title_profil">Profil</string>
+    <string name="name">Nama</string>
+    <string name="avatar">Avatar</string>
+    <string name="email">email</string>
+</resources>
