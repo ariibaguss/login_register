@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_image_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_centerInParent="true"
@@ -27,9 +28,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
+                android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="16sp"
                 tools:text="nama_usename" />
 
             <TextView
@@ -38,9 +39,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_regular"
                 android:gravity="center"
                 android:textColor="#5C5A5A"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:textStyle="normal"
                 tools:text="username@local.com"/>
 
@@ -110,12 +112,9 @@
         android:gravity="center"
         android:elevation="15dp"
         android:padding="5dp"
-        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:shadowColor="#000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="4"
         tools:gravity="center"
         tools:text="A" />
 

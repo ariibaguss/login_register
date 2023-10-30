@@ -25,12 +25,12 @@ class RegisterActivity : AppCompatActivity() {
         // Inisialisasi userDao dari database Room
         userDao = UserRoomDatabase.getDatabase(this).UserDao()
 
-        val RegisterTextView: TextView = findViewById(R.id.buttondaftar)
+        val LoginTextView: TextView = findViewById(R.id.masuk)
 
-        RegisterTextView.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+        LoginTextView.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
             finish()
         }
 
