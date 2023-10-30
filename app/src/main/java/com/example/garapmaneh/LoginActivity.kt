@@ -52,11 +52,6 @@ class LoginActivity : AppCompatActivity() {
             when {
                 user != null && user.password == inputPassword -> {
                     Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
-                    val preferences = getSharedPreferences("UserData", Context.MODE_PRIVATE)
-                    val editor = preferences.edit()
-                    editor.putString("userName", user.username)
-                    editor.putString("userEmail", user.email)
-                    editor.apply()
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()
