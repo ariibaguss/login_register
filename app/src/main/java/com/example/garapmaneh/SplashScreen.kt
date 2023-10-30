@@ -22,6 +22,6 @@ class SplashScreen : AppCompatActivity() {
             // Ini pindah ke MainActivity_Login
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
-        }, 1500) // Delay selama 3 detik
+        }, 3000) // Delay selama 3 detik
     }
 }
